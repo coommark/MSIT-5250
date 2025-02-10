@@ -4,23 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="logo.webp" alt="My Logo" />
+    <header class="bg-dark text-white py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="logo">
+          <img
+            src="logo.webp"
+            alt="My Logo"
+            class="img-fluid"
+            style="height: 50px"
+          />
+        </div>
+        <nav>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
     </header>
 
-    <main>
-      <section id="about">
+    <main class="container my-5">
+      <section id="about" class="text-center">
         <h1>Welcome to My Portfolio</h1>
         <p>
           Hi, I'm a website developer. Check out my work and feel free to
@@ -28,33 +47,58 @@
         </p>
       </section>
 
-      <section id="services">
-        <h2>Services</h2>
-        <div class="services-container">
-          <div class="service">
-            <h3>Software Development</h3>
-            <p>Custom software solutions tailored to your business needs.</p>
+      <section id="services" class="my-5">
+        <h2 class="text-center">Services</h2>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="service mx-auto">
+              <img
+                src="software.avif"
+                alt="Software Development"
+                class="service-img"
+              />
+              <h3>Software Development</h3>
+              <p>Custom software solutions tailored to your business needs.</p>
+            </div>
           </div>
-          <div class="service">
-            <h3>Website Design</h3>
-            <p>
-              Beautiful and responsive website designs to enhance your online
-              presence.
-            </p>
+          <div class="col-md-4">
+            <div class="service mx-auto">
+              <img
+                src="website.avif"
+                alt="Website Design"
+                class="service-img"
+              />
+              <h3>Website Design</h3>
+              <p>
+                Beautiful and responsive website designs to enhance your online
+                presence.
+              </p>
+            </div>
           </div>
-          <div class="service">
-            <h3>Machine Learning</h3>
-            <p>
-              Innovative machine learning solutions to drive your business
-              forward.
-            </p>
+          <div class="col-md-4">
+            <div class="service mx-auto">
+              <img
+                src="machine.avif"
+                alt="Machine Learning"
+                class="service-img"
+              />
+              <h3>Machine Learning</h3>
+              <p>
+                Innovative machine learning solutions to drive your business
+                forward.
+              </p>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
       <p>&copy; 2023 My Portfolio</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
